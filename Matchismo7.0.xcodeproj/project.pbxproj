@@ -26,6 +26,7 @@
 		5F57EC67187E712800CCDF96 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC66187E712800CCDF96 /* Deck.m */; };
 		5F57EC6A187E731900CCDF96 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC69187E731900CCDF96 /* PlayingCard.m */; };
 		5F57EC6D187E86EE00CCDF96 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC6C187E86EE00CCDF96 /* PlayingCardDeck.m */; };
+		5F57EC70187E8E5A00CCDF96 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC6F187E8E5A00CCDF96 /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		5F57EC69187E731900CCDF96 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		5F57EC6B187E86EE00CCDF96 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		5F57EC6C187E86EE00CCDF96 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
+		5F57EC6E187E8E5A00CCDF96 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		5F57EC6F187E8E5A00CCDF96 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				5F57EC61187E70D600CCDF96 /* Card.h */,
+				5F57EC6E187E8E5A00CCDF96 /* CardMatchingGame.h */,
+				5F57EC6F187E8E5A00CCDF96 /* CardMatchingGame.m */,
 				5F57EC62187E70D600CCDF96 /* Card.m */,
 				5F57EC65187E712800CCDF96 /* Deck.h */,
 				5F57EC66187E712800CCDF96 /* Deck.m */,
@@ -286,6 +291,7 @@
 				5F57EC67187E712800CCDF96 /* Deck.m in Sources */,
 				5F57EC39187E648700CCDF96 /* CardGameAppDelegate.m in Sources */,
 				5F57EC3F187E648700CCDF96 /* CardGameViewController.m in Sources */,
+				5F57EC70187E8E5A00CCDF96 /* CardMatchingGame.m in Sources */,
 				5F57EC6D187E86EE00CCDF96 /* PlayingCardDeck.m in Sources */,
 				5F57EC35187E648700CCDF96 /* main.m in Sources */,
 				5F57EC63187E70D600CCDF96 /* Card.m in Sources */,
