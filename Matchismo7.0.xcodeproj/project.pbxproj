@@ -24,6 +24,7 @@
 		5F57EC60187E67EB00CCDF96 /* Stanford-Logo-Tree.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5F57EC5F187E67EB00CCDF96 /* Stanford-Logo-Tree.gif */; };
 		5F57EC63187E70D600CCDF96 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC62187E70D600CCDF96 /* Card.m */; };
 		5F57EC67187E712800CCDF96 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC66187E712800CCDF96 /* Deck.m */; };
+		5F57EC6A187E731900CCDF96 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC69187E731900CCDF96 /* PlayingCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		5F57EC62187E70D600CCDF96 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		5F57EC65187E712800CCDF96 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
 		5F57EC66187E712800CCDF96 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
+		5F57EC68187E731900CCDF96 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		5F57EC69187E731900CCDF96 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				5F57EC62187E70D600CCDF96 /* Card.m */,
 				5F57EC65187E712800CCDF96 /* Deck.h */,
 				5F57EC66187E712800CCDF96 /* Deck.m */,
+				5F57EC68187E731900CCDF96 /* PlayingCard.h */,
+				5F57EC69187E731900CCDF96 /* PlayingCard.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F57EC6A187E731900CCDF96 /* PlayingCard.m in Sources */,
 				5F57EC67187E712800CCDF96 /* Deck.m in Sources */,
 				5F57EC39187E648700CCDF96 /* CardGameAppDelegate.m in Sources */,
 				5F57EC3F187E648700CCDF96 /* CardGameViewController.m in Sources */,
