@@ -8,31 +8,50 @@
 
 #import "CardGameViewController.h"
 #import "PlayingCardDeck.h"
+#import "CardMatchingGame.h"
+
 
 @interface CardGameViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (nonatomic)int flipCount;
-@property (strong, nonatomic) Deck *deck;
+//@property (strong, nonatomic) Deck *deck;
+@property (strong, nonatomic) CardMatchingGame *game;
 
 @end
 
 @implementation CardGameViewController
 
--(Deck *)deck
+-(CardMatchingGame *)game
 {
-    if(!_deck)_deck = [[PlayingCardDeck alloc]init];
-    return _deck;
+    if(!_game) _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count usingDeck:[[PlayingCardDeck alloc]init]];
+    return _game;
 }
 
 -(void)setCardButtons:(NSArray *)cardButtons
 {
     _cardButtons = cardButtons;
-    for(UIButton *cardButton in cardButtons)
-    {
-        Card *card = [self.deck drawRandomCard];
+//    for(UIButton *cardButton in cardButtons)
+//    {
+//        Card *card = [self.deck drawRandomCard];
+//        [cardButton setTitle:card.contents forState:UIControlStateSelected];
+//    }
+}
+
+-(void)updateUI
+{
+    for (UIButton *cardButton in self.cardButtons) {
+        Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
         [cardButton setTitle:card.contents forState:UIControlStateSelected];
+//        
+//        [cardButton setTitle:card.contents forState:UIControlStateSelected | UIControlStateDisabled];
+        // We only select the card if its faceup
+        cardButton.selected = !card.isFaceUp;
+        
+        cardButton.enabled = !card.isUnplayable;
+        
+        cardButton.alpha = card.isUnplayable ? 0.4 : 1.0;
     }
 }
 
@@ -46,6 +65,7 @@
 - (IBAction)touchCardButton:(UIButton *)sender {
     sender.selected = !sender.isSelected;
     self.flipCount++;
+    [self updateUI];
 }
 
 
