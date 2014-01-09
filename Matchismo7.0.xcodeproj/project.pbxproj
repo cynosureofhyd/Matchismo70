@@ -21,6 +21,9 @@
 		5F57EC4A187E648700CCDF96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F57EC2C187E648700CCDF96 /* UIKit.framework */; };
 		5F57EC52187E648700CCDF96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F57EC50187E648700CCDF96 /* InfoPlist.strings */; };
 		5F57EC54187E648700CCDF96 /* Matchismo7_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC53187E648700CCDF96 /* Matchismo7_0Tests.m */; };
+		5F57EC60187E67EB00CCDF96 /* Stanford-Logo-Tree.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5F57EC5F187E67EB00CCDF96 /* Stanford-Logo-Tree.gif */; };
+		5F57EC63187E70D600CCDF96 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC62187E70D600CCDF96 /* Card.m */; };
+		5F57EC67187E712800CCDF96 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC66187E712800CCDF96 /* Deck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		5F57EC4F187E648700CCDF96 /* Matchismo7.0Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Matchismo7.0Tests-Info.plist"; sourceTree = "<group>"; };
 		5F57EC51187E648700CCDF96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5F57EC53187E648700CCDF96 /* Matchismo7_0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Matchismo7_0Tests.m; sourceTree = "<group>"; };
+		5F57EC5F187E67EB00CCDF96 /* Stanford-Logo-Tree.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Stanford-Logo-Tree.gif"; path = "../../../Downloads/Stanford-Logo-Tree.gif"; sourceTree = "<group>"; };
+		5F57EC61187E70D600CCDF96 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		5F57EC62187E70D600CCDF96 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
+		5F57EC65187E712800CCDF96 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
+		5F57EC66187E712800CCDF96 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +120,11 @@
 		5F57EC2E187E648700CCDF96 /* Matchismo7.0 */ = {
 			isa = PBXGroup;
 			children = (
+				5F57EC5F187E67EB00CCDF96 /* Stanford-Logo-Tree.gif */,
 				5F57EC37187E648700CCDF96 /* CardGameAppDelegate.h */,
 				5F57EC38187E648700CCDF96 /* CardGameAppDelegate.m */,
 				5F57EC3A187E648700CCDF96 /* Main.storyboard */,
+				5F57EC64187E70F800CCDF96 /* Model */,
 				5F57EC3D187E648700CCDF96 /* CardGameViewController.h */,
 				5F57EC3E187E648700CCDF96 /* CardGameViewController.m */,
 				5F57EC40187E648700CCDF96 /* Images.xcassets */,
@@ -150,6 +160,17 @@
 				5F57EC50187E648700CCDF96 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F57EC64187E70F800CCDF96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F57EC61187E70D600CCDF96 /* Card.h */,
+				5F57EC62187E70D600CCDF96 /* Card.m */,
+				5F57EC65187E712800CCDF96 /* Deck.h */,
+				5F57EC66187E712800CCDF96 /* Deck.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +252,7 @@
 			files = (
 				5F57EC41187E648700CCDF96 /* Images.xcassets in Resources */,
 				5F57EC33187E648700CCDF96 /* InfoPlist.strings in Resources */,
+				5F57EC60187E67EB00CCDF96 /* Stanford-Logo-Tree.gif in Resources */,
 				5F57EC3C187E648700CCDF96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F57EC67187E712800CCDF96 /* Deck.m in Sources */,
 				5F57EC39187E648700CCDF96 /* CardGameAppDelegate.m in Sources */,
 				5F57EC3F187E648700CCDF96 /* CardGameViewController.m in Sources */,
 				5F57EC35187E648700CCDF96 /* main.m in Sources */,
+				5F57EC63187E70D600CCDF96 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
