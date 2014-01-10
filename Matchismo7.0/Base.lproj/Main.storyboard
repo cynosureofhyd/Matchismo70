@@ -167,12 +167,20 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZYN-5N-l3n"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahZ-74-PZa">
+                                <rect key="frame" x="186" y="439" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.4831066696359092" green="0.87363981393729984" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="flipsLabel" destination="Trg-eg-oVT" id="OWn-7c-q7q"/>
+                        <outlet property="scoreLabel" destination="ahZ-74-PZa" id="ClQ-fP-72c"/>
                         <outletCollection property="cardButtons" destination="Rwr-aw-nIj" id="lS1-pE-ehz"/>
                         <outletCollection property="cardButtons" destination="o3C-Hc-xLU" id="kN4-FM-Oal"/>
                         <outletCollection property="cardButtons" destination="AIc-8p-XdJ" id="Suu-dy-FHY"/>

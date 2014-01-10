@@ -18,6 +18,7 @@
 @property (nonatomic)int flipCount;
 //@property (strong, nonatomic) Deck *deck;
 @property (strong, nonatomic) CardMatchingGame *game;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @end
 
@@ -55,6 +56,8 @@
         
         cardButton.alpha = card.isUnplayable ? 0.4 : 1.0;
     }
+    
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
 }
 
 -(void)setFlipCount:(int)flipCount
@@ -65,6 +68,9 @@
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
+    
+    UIImage *cardImage = [UIImage imageNamed:@"cardBack"];
+    [sender setBackgroundImage:cardImage forState:UIControlStateNormal];
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
     self.flipCount++;
     [self updateUI];
