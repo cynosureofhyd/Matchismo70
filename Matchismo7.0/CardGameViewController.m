@@ -25,7 +25,7 @@
 
 -(CardMatchingGame *)game
 {
-    if(!_game) _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count usingDeck:[[PlayingCardDeck alloc]init]];
+    if(!_game) _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count usingDeck:[[PlayingCardDeck alloc] init]];
     return _game;
 }
 
@@ -37,6 +37,7 @@
 //        Card *card = [self.deck drawRandomCard];
 //        [cardButton setTitle:card.contents forState:UIControlStateSelected];
 //    }
+    [self updateUI];
 }
 
 -(void)updateUI
@@ -45,9 +46,10 @@
         Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
         [cardButton setTitle:card.contents forState:UIControlStateSelected];
 //        
-//        [cardButton setTitle:card.contents forState:UIControlStateSelected | UIControlStateDisabled];
+        [cardButton setTitle:card.contents forState:UIControlStateSelected | UIControlStateDisabled];
+        
         // We only select the card if its faceup
-        cardButton.selected = !card.isFaceUp;
+        cardButton.selected = card.isFaceUp;
         
         cardButton.enabled = !card.isUnplayable;
         
@@ -63,7 +65,7 @@
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
-    sender.selected = !sender.isSelected;
+    [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
     self.flipCount++;
     [self updateUI];
 }
