@@ -233,6 +233,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Cynosure;
 				TargetAttributes = {
+					5F57EC24187E648700CCDF96 = {
+						DevelopmentTeam = FW8M2SJX5U;
+					};
 					5F57EC45187E648700CCDF96 = {
 						TestTargetID = 5F57EC24187E648700CCDF96;
 					};
@@ -417,10 +420,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo7.0/Matchismo7.0-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo7.0/Matchismo7.0-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -430,10 +436,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo7.0/Matchismo7.0-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo7.0/Matchismo7.0-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
