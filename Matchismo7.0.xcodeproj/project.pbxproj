@@ -26,6 +26,7 @@
 		5F57EC6A187E731900CCDF96 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC69187E731900CCDF96 /* PlayingCard.m */; };
 		5F57EC6D187E86EE00CCDF96 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC6C187E86EE00CCDF96 /* PlayingCardDeck.m */; };
 		5F57EC70187E8E5A00CCDF96 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC6F187E8E5A00CCDF96 /* CardMatchingGame.m */; };
+		8CA98345188F909F007C9AD4 /* GameResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA98344188F909F007C9AD4 /* GameResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		5F57EC6C187E86EE00CCDF96 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		5F57EC6E187E8E5A00CCDF96 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
 		5F57EC6F187E8E5A00CCDF96 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
+		8CA98343188F909F007C9AD4 /* GameResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultViewController.h; sourceTree = "<group>"; };
+		8CA98344188F909F007C9AD4 /* GameResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResultViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				5F57EC37187E648700CCDF96 /* CardGameAppDelegate.h */,
 				5F57EC38187E648700CCDF96 /* CardGameAppDelegate.m */,
 				5F57EC3A187E648700CCDF96 /* Main.storyboard */,
+				8CA98343188F909F007C9AD4 /* GameResultViewController.h */,
+				8CA98344188F909F007C9AD4 /* GameResultViewController.m */,
 				5F57EC64187E70F800CCDF96 /* Model */,
 				5F57EC3D187E648700CCDF96 /* CardGameViewController.h */,
 				5F57EC3E187E648700CCDF96 /* CardGameViewController.m */,
@@ -287,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F57EC6A187E731900CCDF96 /* PlayingCard.m in Sources */,
+				8CA98345188F909F007C9AD4 /* GameResultViewController.m in Sources */,
 				5F57EC67187E712800CCDF96 /* Deck.m in Sources */,
 				5F57EC39187E648700CCDF96 /* CardGameAppDelegate.m in Sources */,
 				5F57EC3F187E648700CCDF96 /* CardGameViewController.m in Sources */,
