@@ -18,6 +18,9 @@
 @implementation GameResult
 
 #define ALL_RESULTS_KEY @"GameResult_All"
+#define START_KEY @"StartDate"
+#define END_KEY @"EndDate"
+#define SCORE_KEY @"Score"
 
 +(NSArray *)allGameResults
 {
@@ -37,7 +40,16 @@
 {
     self = [self init];
     if (self) {
-        
+        if([plist isKindOfClass:[NSDictionary class]])
+        {
+            NSDictionary *resultsDictionary = (NSDictionary *)plist;
+            _start = resultsDictionary[START_KEY];
+            _end = resultsDictionary[END_KEY];
+            _score = [resultsDictionary[SCORE_KEY] intValue];
+            if(!_start || !_end)
+                self = nil;
+            
+        }
     }
     return self;
 }
@@ -54,9 +66,6 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-#define START_KEY @"StartDate"
-#define END_KEY @"EndDate"
-#define SCORE_KEY @"Score"
 
 -(id)asPropertyList
 {
