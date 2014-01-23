@@ -21,12 +21,13 @@
 		5F57EC4A187E648700CCDF96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F57EC2C187E648700CCDF96 /* UIKit.framework */; };
 		5F57EC52187E648700CCDF96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F57EC50187E648700CCDF96 /* InfoPlist.strings */; };
 		5F57EC54187E648700CCDF96 /* Matchismo7_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC53187E648700CCDF96 /* Matchismo7_0Tests.m */; };
-		5F57EC60187E67EB00CCDF96 /* Stanford-Logo-Tree.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5F57EC5F187E67EB00CCDF96 /* Stanford-Logo-Tree.gif */; };
 		5F57EC63187E70D600CCDF96 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC62187E70D600CCDF96 /* Card.m */; };
 		5F57EC67187E712800CCDF96 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC66187E712800CCDF96 /* Deck.m */; };
 		5F57EC6A187E731900CCDF96 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC69187E731900CCDF96 /* PlayingCard.m */; };
 		5F57EC6D187E86EE00CCDF96 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC6C187E86EE00CCDF96 /* PlayingCardDeck.m */; };
 		5F57EC70187E8E5A00CCDF96 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F57EC6F187E8E5A00CCDF96 /* CardMatchingGame.m */; };
+		8CA98345188F909F007C9AD4 /* GameResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA98344188F909F007C9AD4 /* GameResultViewController.m */; };
+		8CA98348188F94C4007C9AD4 /* GameResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA98347188F94C4007C9AD4 /* GameResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +60,6 @@
 		5F57EC4F187E648700CCDF96 /* Matchismo7.0Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Matchismo7.0Tests-Info.plist"; sourceTree = "<group>"; };
 		5F57EC51187E648700CCDF96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5F57EC53187E648700CCDF96 /* Matchismo7_0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Matchismo7_0Tests.m; sourceTree = "<group>"; };
-		5F57EC5F187E67EB00CCDF96 /* Stanford-Logo-Tree.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Stanford-Logo-Tree.gif"; path = "../../../Downloads/Stanford-Logo-Tree.gif"; sourceTree = "<group>"; };
 		5F57EC61187E70D600CCDF96 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		5F57EC62187E70D600CCDF96 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		5F57EC65187E712800CCDF96 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
@@ -70,6 +70,10 @@
 		5F57EC6C187E86EE00CCDF96 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		5F57EC6E187E8E5A00CCDF96 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
 		5F57EC6F187E8E5A00CCDF96 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
+		8CA98343188F909F007C9AD4 /* GameResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultViewController.h; sourceTree = "<group>"; };
+		8CA98344188F909F007C9AD4 /* GameResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResultViewController.m; sourceTree = "<group>"; };
+		8CA98346188F94C4007C9AD4 /* GameResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResult.h; sourceTree = "<group>"; };
+		8CA98347188F94C4007C9AD4 /* GameResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +133,13 @@
 		5F57EC2E187E648700CCDF96 /* Matchismo7.0 */ = {
 			isa = PBXGroup;
 			children = (
-				5F57EC5F187E67EB00CCDF96 /* Stanford-Logo-Tree.gif */,
 				5F57EC37187E648700CCDF96 /* CardGameAppDelegate.h */,
 				5F57EC38187E648700CCDF96 /* CardGameAppDelegate.m */,
 				5F57EC3A187E648700CCDF96 /* Main.storyboard */,
+				8CA98346188F94C4007C9AD4 /* GameResult.h */,
+				8CA98347188F94C4007C9AD4 /* GameResult.m */,
+				8CA98343188F909F007C9AD4 /* GameResultViewController.h */,
+				8CA98344188F909F007C9AD4 /* GameResultViewController.m */,
 				5F57EC64187E70F800CCDF96 /* Model */,
 				5F57EC3D187E648700CCDF96 /* CardGameViewController.h */,
 				5F57EC3E187E648700CCDF96 /* CardGameViewController.m */,
@@ -236,6 +243,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Cynosure;
 				TargetAttributes = {
+					5F57EC24187E648700CCDF96 = {
+						DevelopmentTeam = FW8M2SJX5U;
+					};
 					5F57EC45187E648700CCDF96 = {
 						TestTargetID = 5F57EC24187E648700CCDF96;
 					};
@@ -267,7 +277,6 @@
 			files = (
 				5F57EC41187E648700CCDF96 /* Images.xcassets in Resources */,
 				5F57EC33187E648700CCDF96 /* InfoPlist.strings in Resources */,
-				5F57EC60187E67EB00CCDF96 /* Stanford-Logo-Tree.gif in Resources */,
 				5F57EC3C187E648700CCDF96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,12 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F57EC6A187E731900CCDF96 /* PlayingCard.m in Sources */,
+				8CA98345188F909F007C9AD4 /* GameResultViewController.m in Sources */,
 				5F57EC67187E712800CCDF96 /* Deck.m in Sources */,
 				5F57EC39187E648700CCDF96 /* CardGameAppDelegate.m in Sources */,
 				5F57EC3F187E648700CCDF96 /* CardGameViewController.m in Sources */,
 				5F57EC70187E8E5A00CCDF96 /* CardMatchingGame.m in Sources */,
 				5F57EC6D187E86EE00CCDF96 /* PlayingCardDeck.m in Sources */,
 				5F57EC35187E648700CCDF96 /* main.m in Sources */,
+				8CA98348188F94C4007C9AD4 /* GameResult.m in Sources */,
 				5F57EC63187E70D600CCDF96 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,10 +432,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo7.0/Matchismo7.0-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo7.0/Matchismo7.0-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -434,10 +448,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo7.0/Matchismo7.0-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo7.0/Matchismo7.0-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -503,6 +520,7 @@
 				5F57EC59187E648700CCDF96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F57EC5A187E648700CCDF96 /* Build configuration list for PBXNativeTarget "Matchismo7.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +529,7 @@
 				5F57EC5C187E648700CCDF96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
